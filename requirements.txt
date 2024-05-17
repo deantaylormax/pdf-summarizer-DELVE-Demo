@@ -1,0 +1,2 @@
+streamlit==1.29.0
+git+https://github.com/FraMaBu/genaipy-lib.git
