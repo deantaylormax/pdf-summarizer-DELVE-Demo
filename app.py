@@ -18,8 +18,13 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+#install python-dotenv
+from dotenv import load_dotenv
+import os
+
+
 # Authentication (use your method to validate or input API key)
-OPENAI_API_KEY = validate_api_key(env_var_name="OPENAI_API_KEY")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 # Define mode-specific prompts
 mode_settings = {
